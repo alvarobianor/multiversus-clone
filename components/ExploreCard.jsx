@@ -10,7 +10,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
       active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
-    } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
+    } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[3s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
     <img
@@ -23,20 +23,20 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+      <div className="absolute bottom-0 lg:p-8 p-3 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
         <div
-          className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+          className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px] lg:flex hidden`}
         >
           <img
             src="/headset.svg"
             alt="headset"
-            className="w-1/2 h-1/2 object-contain"
+            className="w-1/2 h-1/2 object-contain lg:block hidden"
           />
         </div>
-        <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
+        <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase lg:block hidden">
           Enter Metaverse
         </p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
+        <h2 className="lg:mt-[24px] mt-0 font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
         </h2>
       </div>
