@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-import { textContainer, textVariant2 } from '../utils/motion';
+import { textContainer, textVariant, textVariant2 } from '../utils/motion';
 
 export const TypingText = ({ title, textStyles }) => (
   <motion.p
@@ -18,5 +18,12 @@ export const TypingText = ({ title, textStyles }) => (
 );
 
 export const TitleText = ({ title, textStyles }) => (
-  <h2 className={textStyles}>{title}</h2>
+  <motion.h2
+    ariants={textVariant}
+    initial="hidden"
+    whileInView="show"
+    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
+  >
+    {title}
+  </motion.h2>
 );
