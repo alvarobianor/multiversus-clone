@@ -1,6 +1,6 @@
 import styles from '../styles';
 
-const StartSteps = ({ item, order }) => (
+const StartSteps = ({ feature, order }) => (
   <div className={`${styles.flexCenter} flex-row`}>
     <div
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323f5d]`}
@@ -10,7 +10,7 @@ const StartSteps = ({ item, order }) => (
       </p>
     </div>
     <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32px]">
-      {item}
+      {feature}
     </p>
   </div>
 );
