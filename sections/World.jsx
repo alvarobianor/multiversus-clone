@@ -36,15 +36,15 @@ const World = () => (
           className="w-full h-full object-contain"
         />
 
-        <div className="absolute bottom-28 md:bottom-20 right-1 md:right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute bottom-28 md:bottom-20 right-1 md:right-20 w-[35px] md:w-[70px] h-[35px] md:h-[70px] p-[6px] rounded-full bg-[#5D6680]">
           <img src="people-01.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute top-24 md:top-10 left-20 w-[35px] md:w-[70px] h-[35px] md:h-[70px] p-[6px] rounded-full bg-[#5D6680]">
           <img src="/people-02.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-1/4 md:top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute top-1/4 md:top-1/2 left-[45%] w-[35px] md:w-[70px] h-[35px] md:h-[70px] p-[6px] rounded-full bg-[#5D6680]">
           <img src="people-03.png" alt="people" className="w-full h-full" />
         </div>
       </motion.div>
