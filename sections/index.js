@@ -8,8 +8,8 @@ import Insights from './Insights';
 import Feedback from './Feedback';
 
 export {
-  About,
   Hero,
+  About,
   Explore,
   GetStarted,
   WhatsNew,
